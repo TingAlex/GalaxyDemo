@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Parallax Template - Materialize</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+</head>
+<body>
+<header>
+</header>
+
+<main>
+    <div class="row">
+        <br>
+        <form class="col s12 m6">
+            <!--description-->
+            <div class="row">
+                <div class="input-field col s12">
+                    <textarea id="description" class="materialize-textarea" data-length="50"></textarea>
+                    <label for="description">描述</label>
+                </div>
+                <div class="input-field col s12 colorDataPicker">
+                    <i class="material-icons prefix">textsms</i>
+                    <input type="text" class="datepicker" id="date-pick">
+                    <label for="date-pick">生日</label>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</main>
+
+<!-- Compiled and minified JavaScript -->
+<!--<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+<script>
+    const datePicker = document.querySelector('.datepicker');
+    const datePickerInstance = M.Datepicker.init(datePicker);
+
+    //TODO:How to modify these two statements below to make textarea character counter workable by using materializecss' js, just like the "date-pick" one above? Cause materializecss says it doesn't require jQuery as a dependency.
+
+    const textNeedCount = document.querySelector('textarea #description');
+    const textNeedCountInstance = M.CharacterCounter(textNeedCount);
+
+</script>
+</body>
+</html>
