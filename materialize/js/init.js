@@ -7,14 +7,31 @@ const parallaxInstance = M.Parallax.init(parallax);
 const carousel = document.querySelector('.carousel');
 const carouselInstance = M.Carousel.init(carousel);
 
-const collapsible = document.querySelector('.collapsible');
-const collapsibleInstance = M.Collapsible.init(collapsible);
+document.querySelectorAll('.collapsible').forEach((item) => {
+        M.Collapsible.init(item)
+    }
+);
+
+document.querySelectorAll('.dropdown-trigger').forEach((item) => {
+        M.Dropdown.init(item)
+    }
+);
+
+document.querySelectorAll('.timepicker').forEach((item) => {
+        M.Timepicker.init(item,{
+            twelveHour:false
+    })
+    }
+);
+
+const modal = document.querySelector('.modal');
+const modalInstance = M.Modal.init(modal);
 
 const scrollspy = document.querySelector('.scrollspy');
 const scrollspyInstance = M.ScrollSpy.init(scrollspy);
 
 const autocomplete = document.querySelector('.autocomplete');
-const autocompleteInstance = M.Autocomplete.init(autocomplete,{
+const autocompleteInstance = M.Autocomplete.init(autocomplete, {
     data: {
         "大连理工": null,
         "大连交通": null,
@@ -23,5 +40,5 @@ const autocompleteInstance = M.Autocomplete.init(autocomplete,{
 });
 
 const textareaNeedCount = document.querySelector('textarea#description');
-const textareaNeedCountInstance=new M.CharacterCounter(textareaNeedCount);
-const textareaCountPlusResize=new M.textareaAutoResize(textareaNeedCountInstance);
+const textareaNeedCountInstance = new M.CharacterCounter(textareaNeedCount);
+const textareaCountPlusResize = new M.textareaAutoResize(textareaNeedCountInstance);

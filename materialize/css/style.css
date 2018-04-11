@@ -6,6 +6,12 @@
  * Made By MaterializeCSS.com
  */
 
+/*At user person workshop, there will be a side nav so we need padding*/
+.workshop header, .workshop main, .workshop footer {
+    padding-left: 300px;
+}
+
+/*At explore and picStore pages the choose field's a tag need black,and the chooseOption need right margin  */
 .choose a {
     color: #444;
 }
@@ -14,6 +20,7 @@
     margin: 0 10px;
 }
 
+/*not workable to make the footer stick on the bottom when less content,just keep it here at a moment*/
 body {
     display: flex;
     min-height: 100vh;
@@ -24,6 +31,7 @@ main {
     flex: 1 0 auto;
 }
 
+/*materialize CSS default stylling*/
 @media only screen and (max-width: 992px) {
     header, main, footer {
         padding-left: 0;
@@ -38,6 +46,10 @@ p {
     color: #26a69a;
 }
 
+#index-bannerForMoreInfo.parallax-container{
+    min-height: 580px;
+}
+
 .parallax-container {
     min-height: 380px;
     line-height: 0;
@@ -45,6 +57,7 @@ p {
     color: rgba(255, 255, 255, .9);
 }
 
+/*when use a dataPicker at a parallax, the text color will match parallax css style, so the dataPicker's date will be white, and we can't change input field's text color to make date-picker's text be shown, so we need change its parent box color*/
 .parallax-container .colorDataPicker {
     color: rgba(0, 0, 0, 0.9);
 }
@@ -57,6 +70,15 @@ p {
     width: 100%;
 }
 
+/*align-right a span tag in a paragraf */
+ .toRight {
+    float: right
+}
+
+ .needRightSpace{
+    margin-right: 15px;
+}
+/*materialize CSS default stylling*/
 @media only screen and (max-width: 992px) {
     .parallax-container .section {
         position: absolute;

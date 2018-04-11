@@ -9,186 +9,374 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="../materialize/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="../materialize/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <style>
-        header, main, footer {
-            padding-left: 300px;
-        }
-    </style>
+
 </head>
 <body>
-<div class="nav-wrapper">
-    <ul id="slide-out" class="sidenav sidenav-fixed">
-        <li>
-            <div class="user-view">
-                <div class="background">
-                    <img src="../image/Person/PicOfPersonAlbum/Sence2.jpg" width="100%">
+<div class="workshop">
+    <div class="nav-wrapper">
+        <ul id="slide-out" class="sidenav sidenav-fixed">
+            <li>
+                <div class="user-view">
+                    <div class="background">
+                        <img src="../image/Person/PicOfPersonAlbum/Sence2.jpg" width="100%">
+                    </div>
+                    <a href="#user"><img class="circle" src="../image/Person/PicOfPersonAlbum/headPic.jpg"></a>
+                    <a href="#name"><span class="white-text name">Chongzheng.Shi</span></a>
+                    <a href="#email"><span class="white-text email">tingalex30@gmail.com</span></a>
                 </div>
-                <a href="#user"><img class="circle" src="../image/Person/PicOfPersonAlbum/headPic.jpg"></a>
-                <a href="#name"><span class="white-text name">Chongzheng.Shi</span></a>
-                <a href="#email"><span class="white-text email">tingalex30@gmail.com</span></a>
+            </li>
+            <li><a class="waves-effect" href="#!">我的图库</a></li>
+            <li><a class="waves-effect" href="#!">上传图片</a></li>
+            <li>
+                <div class="divider"></div>
+            </li>
+            <li><a class="waves-effect" href="#!">发起活动</a></li>
+            <li><a class="waves-effect" href="#!">我的主办</a></li>
+            <li><a class="waves-effect blue-grey lighten-3" href="#!">我的参与</a></li>
+            <li>
+                <div class="divider"></div>
+            </li>
+            <li><a class="waves-effect" href="#!">个人资料</a></li>
+            <li><a class="waves-effect" href="#!">账目记录</a></li>
+        </ul>
+    </div>
+    <header>
+        <nav role="navigation">
+            <div class="nav-wrapper">
+                <div class="row">
+                    <div class="col m1">
+                        <a id="logo-container" href="#" class="brand-logo">Galaxy</a>
+                    </div>
+                    <div class="col m10 offset-m1">
+                        <ul class="hide-on-med-and-down">
+                            <li><a href="#">探索</a></li>
+                            <li><a href="#">图库</a></li>
+                            <li class="right"><a href="#">Logout</a></li>
+                            <!--<li class="right"><a href="#">Chongzheng.Shi</a></li>-->
+                            <li class="right">G币：20</li>
+                            <li class="right">
+                                <button class="btn needRightSpace">充值</button>
+                            </li>
+                        </ul>
+
+                        <ul id="nav-mobile" class="sidenav">
+                            <li><a href="#">探索</a></li>
+                            <li><a href="#">图库</a></li>
+                            <li><a href="#">Login with Github</a></li>
+                        </ul>
+                        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    </div>
+                </div>
             </div>
-        </li>
-        <li><a class="waves-effect" href="#!">我的图库</a></li>
-        <li><a class="waves-effect" href="#!">上传图片</a></li>
-        <li>
-            <div class="divider"></div>
-        </li>
-        <li><a class="waves-effect" href="#!">发起活动</a></li>
-        <li><a class="waves-effect blue-grey lighten-3" href="#!">我的参与</a></li>
-        <li>
-            <div class="divider"></div>
-        </li>
-        <li><a class="waves-effect" href="#!">个人资料</a></li>
-        <li><a class="waves-effect" href="#!">账目记录</a></li>
-    </ul>
-</div>
-<header>
-    <nav role="navigation">
-        <div class="nav-wrapper">
-            <div class="row">
-                <div class="col m1">
-                    <a id="logo-container" href="#" class="brand-logo">Galaxy</a>
-                </div>
-                <div class="col m10 offset-m1">
-                    <ul class="hide-on-med-and-down">
-                        <li><a href="#">探索</a></li>
-                        <li><a href="#">图库</a></li>
-                        <li class="right"><a href="#">Logout</a></li>
-                        <!--<li class="right"><a href="#">Chongzheng.Shi</a></li>-->
-                        <li class="right" style="margin-left: 15px">G币：20</li>
-                        <li class="right">
-                            <button class="btn">充值</button>
+        </nav>
+    </header>
+    <main>
+        <div class="row">
+            <br>
+            <div class="col m8">
+                <div class="section" id="2018-12">
+                    <nav>
+                        <div class="nav-wrapper">
+                            <div class="col s12">
+                                <a href="#!" class="breadcrumb">2018</a>
+                                <a href="#!" class="breadcrumb">12</a>
+                            </div>
+                        </div>
+                    </nav>
+                    <ul class="collapsible popout">
+                        <li>
+                            <div class="collapsible-header">
+                                <div class="col m7 valign-wrapper">
+                                    <i class="material-icons">arrow_upward</i>大连理工大学
+                                </div>
+                                <div class="col m5 valign-wrapper">2018.12.03 20:00~22:00</div>
+                            </div>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <!-- Dropdown Trigger -->
+                                    <li class='dropdown-trigger btn-small right' href='#' data-target='dropdown1'>操作</li>
+                                    <!-- Dropdown Structure -->
+                                    <ul id='dropdown1' class='dropdown-content'>
+                                        <li><a href="#!" class="center-align disabled">详情</a></li>
+                                        <li><a href="#!" class="center-align">退出</a></li>
+                                        <!--<li class="divider" tabindex="-1"></li>-->
+                                        <li><a href="#!" class="center-align">删除</a></li>
+                                    </ul>
+                                    <li>血色蓝月</li>
+                                    <li>大连理工大学</li>
+                                    <li>负责人：姜小捷</li>
+                                    <li>辽宁大连金州大连理工大学软件学院涌泉湖</li>
+                                    <li>入场券：10 G币</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">
+                                <div class="col m7 valign-wrapper">
+                                    <i class="material-icons">all_inclusive</i>大连理工大学
+                                </div>
+                                <div class="col m5 valign-wrapper">2018.12.03 20:00~22:00</div>
+                            </div>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <!-- Dropdown Trigger -->
+                                    <li class='dropdown-trigger btn-small right' href='#' data-target='dropdown2'>操作</li>
+                                    <!-- Dropdown Structure -->
+                                    <ul id='dropdown2' class='dropdown-content'>
+                                        <li><a href="#!" class="center-align disabled">详情</a></li>
+                                        <li><a href="#!" class="center-align">退出</a></li>
+                                        <!--<li class="divider" tabindex="-1"></li>-->
+                                        <li><a href="#!" class="center-align">删除</a></li>
+                                    </ul>
+                                    <li>血色蓝月</li>
+                                    <li>大连理工大学</li>
+                                    <li>负责人：姜小捷</li>
+                                    <li>辽宁大连金州大连理工大学软件学院涌泉湖</li>
+                                    <li>入场券：10 G币</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">
+                                <div class="col m7 valign-wrapper">
+                                    <i class="material-icons">check</i>大连理工大学
+                                </div>
+                                <div class="col m5 valign-wrapper">2018.12.03 20:00~22:00</div>
+                            </div>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <!-- Dropdown Trigger -->
+                                    <li class='dropdown-trigger btn-small right' href='#' data-target='dropdown3'>操作</li>
+                                    <!-- Dropdown Structure -->
+                                    <ul id='dropdown3' class='dropdown-content'>
+                                        <li><a href="#!" class="center-align disabled">详情</a></li>
+                                        <li><a href="#!" class="center-align">退出</a></li>
+                                        <!--<li class="divider" tabindex="-1"></li>-->
+                                        <li><a href="#!" class="center-align">删除</a></li>
+                                    </ul>
+                                    <li>血色蓝月</li>
+                                    <li>大连理工大学</li>
+                                    <li>负责人：姜小捷</li>
+                                    <li>辽宁大连金州大连理工大学软件学院涌泉湖</li>
+                                    <li>入场券：10 G币</li>
+                                </ul>
+                            </div>
                         </li>
                     </ul>
-
-                    <ul id="nav-mobile" class="sidenav">
-                        <li><a href="#">探索</a></li>
-                        <li><a href="#">图库</a></li>
-                        <li><a href="#">Login with Github</a></li>
+                </div>
+                <div class="section" id="2018-11">
+                    <nav>
+                        <div class="nav-wrapper">
+                            <div class="col s12">
+                                <a href="#!" class="breadcrumb">2018</a>
+                                <a href="#!" class="breadcrumb">11</a>
+                            </div>
+                        </div>
+                    </nav>
+                    <ul class="collapsible popout">
+                        <li>
+                            <div class="collapsible-header">
+                                <div class="col m7 valign-wrapper">
+                                    <i class="material-icons">check</i>大连理工大学
+                                </div>
+                                <div class="col m5 valign-wrapper">2018.12.03 20:00~22:00</div>
+                            </div>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <!-- Dropdown Trigger -->
+                                    <li class='dropdown-trigger btn-small right' href='#' data-target='dropdown4'>操作</li>
+                                    <!-- Dropdown Structure -->
+                                    <ul id='dropdown4' class='dropdown-content'>
+                                        <li><a href="#!" class="center-align disabled">详情</a></li>
+                                        <li><a href="#!" class="center-align">退出</a></li>
+                                        <!--<li class="divider" tabindex="-1"></li>-->
+                                        <li><a href="#!" class="center-align">删除</a></li>
+                                    </ul>
+                                    <li>血色蓝月</li>
+                                    <li>大连理工大学</li>
+                                    <li>负责人：姜小捷</li>
+                                    <li>辽宁大连金州大连理工大学软件学院涌泉湖</li>
+                                    <li>入场券：10 G币</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">
+                                <div class="col m7 valign-wrapper">
+                                    <i class="material-icons">check</i>大连理工大学
+                                </div>
+                                <div class="col m5 valign-wrapper">2018.12.03 20:00~22:00</div>
+                            </div>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <!-- Dropdown Trigger -->
+                                    <li class='dropdown-trigger btn-small right' href='#' data-target='dropdown5'>操作</li>
+                                    <!-- Dropdown Structure -->
+                                    <ul id='dropdown5' class='dropdown-content'>
+                                        <li><a href="#!" class="center-align disabled">详情</a></li>
+                                        <li><a href="#!" class="center-align">退出</a></li>
+                                        <!--<li class="divider" tabindex="-1"></li>-->
+                                        <li><a href="#!" class="center-align">删除</a></li>
+                                    </ul>
+                                    <li>血色蓝月</li>
+                                    <li>大连理工大学</li>
+                                    <li>负责人：姜小捷</li>
+                                    <li>辽宁大连金州大连理工大学软件学院涌泉湖</li>
+                                    <li>入场券：10 G币</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">
+                                <div class="col m7 valign-wrapper">
+                                    <i class="material-icons">check</i>大连理工大学
+                                </div>
+                                <div class="col m5 valign-wrapper">2018.12.03 20:00~22:00</div>
+                            </div>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <!-- Dropdown Trigger -->
+                                    <li class='dropdown-trigger btn-small right' href='#' data-target='dropdown6'>操作</li>
+                                    <!-- Dropdown Structure -->
+                                    <ul id='dropdown6' class='dropdown-content'>
+                                        <li><a href="#!" class="center-align disabled">详情</a></li>
+                                        <li><a href="#!" class="center-align">退出</a></li>
+                                        <!--<li class="divider" tabindex="-1"></li>-->
+                                        <li><a href="#!" class="center-align">删除</a></li>
+                                    </ul>
+                                    <li>血色蓝月</li>
+                                    <li>大连理工大学</li>
+                                    <li>负责人：姜小捷</li>
+                                    <li>辽宁大连金州大连理工大学软件学院涌泉湖</li>
+                                    <li>入场券：10 G币</li>
+                                </ul>
+                            </div>
+                        </li>
                     </ul>
-                    <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                </div>
+                <div class="section" id="2018-10">
+                    <nav>
+                        <div class="nav-wrapper">
+                            <div class="col s12">
+                                <a href="#!" class="breadcrumb">2018</a>
+                                <a href="#!" class="breadcrumb">10</a>
+                            </div>
+                        </div>
+                    </nav>
+                    <ul class="collapsible popout">
+                        <li>
+                            <div class="collapsible-header">
+                                <div class="col m7 valign-wrapper">
+                                    <i class="material-icons">check</i>大连理工大学
+                                </div>
+                                <div class="col m5 valign-wrapper">2018.12.03 20:00~22:00</div>
+                            </div>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <!-- Dropdown Trigger -->
+                                    <li class='dropdown-trigger btn-small right' href='#' data-target='dropdown7'>操作</li>
+                                    <!-- Dropdown Structure -->
+                                    <ul id='dropdown7' class='dropdown-content'>
+                                        <li><a href="#!" class="center-align disabled">详情</a></li>
+                                        <li><a href="#!" class="center-align">退出</a></li>
+                                        <!--<li class="divider" tabindex="-1"></li>-->
+                                        <li><a href="#!" class="center-align">删除</a></li>
+                                    </ul>
+                                    <li>血色蓝月</li>
+                                    <li>大连理工大学</li>
+                                    <li>负责人：姜小捷</li>
+                                    <li>辽宁大连金州大连理工大学软件学院涌泉湖</li>
+                                    <li>入场券：10 G币</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">
+                                <div class="col m7 valign-wrapper">
+                                    <i class="material-icons">check</i>大连理工大学
+                                </div>
+                                <div class="col m5 valign-wrapper">2018.12.03 20:00~22:00</div>
+                            </div>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <!-- Dropdown Trigger -->
+                                    <li class='dropdown-trigger btn-small right' href='#' data-target='dropdown8'>操作</li>
+                                    <!-- Dropdown Structure -->
+                                    <ul id='dropdown8' class='dropdown-content'>
+                                        <li><a href="#!" class="center-align disabled">详情</a></li>
+                                        <li><a href="#!" class="center-align">退出</a></li>
+                                        <!--<li class="divider" tabindex="-1"></li>-->
+                                        <li><a href="#!" class="center-align">删除</a></li>
+                                    </ul>
+                                    <li>血色蓝月</li>
+                                    <li>大连理工大学</li>
+                                    <li>负责人：姜小捷</li>
+                                    <li>辽宁大连金州大连理工大学软件学院涌泉湖</li>
+                                    <li>入场券：10 G币</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">
+                                <div class="col m7 valign-wrapper">
+                                    <i class="material-icons">check</i>大连理工大学
+                                </div>
+                                <div class="col m5 valign-wrapper">2018.12.03 20:00~22:00</div>
+                            </div>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <!-- Dropdown Trigger -->
+                                    <li class='dropdown-trigger btn-small right' href='#' data-target='dropdown9'>操作</li>
+                                    <!-- Dropdown Structure -->
+                                    <ul id='dropdown9' class='dropdown-content'>
+                                        <li><a href="#!" class="center-align disabled">详情</a></li>
+                                        <li><a href="#!" class="center-align">退出</a></li>
+                                        <!--<li class="divider" tabindex="-1"></li>-->
+                                        <li><a href="#!" class="center-align">删除</a></li>
+                                    </ul>
+                                    <li>血色蓝月</li>
+                                    <li>大连理工大学</li>
+                                    <li>负责人：姜小捷</li>
+                                    <li>辽宁大连金州大连理工大学软件学院涌泉湖</li>
+                                    <li>入场券：10 G币</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col hide-on-small-only offset-m6 m3 center-align pinned">
+                <ul class="section table-of-contents">
+                    <li><a href="#2018-12"> 2018-12</a></li>
+                    <li><a href="#2018-11">2018-11</a></li>
+                    <li><a href="#2018-10">2018-10</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer teal">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Galaxy Bio</h5>
+                    <p class="grey-text text-lighten-4">A connected way to explore Galaxy.</p>
+                </div>
+                <div class="col l3 offset-l3 s12">
+                    <h5 class="white-text">Settings</h5>
+                    <address><strong>Ting</strong><br/> SSDUT of DLUT<br/> Since 2018<br/> <abbr
+                            title="Phone">Email:</abbr>
+                        10chongzheng@outlook.com
+                    </address>
                 </div>
             </div>
         </div>
-    </nav>
-</header>
-
-
-<main>
-    <div class="row">
-        <br>
-        <div class="col m8">
-            <!--<div>-->
-            <div class="section" id="2018-12">
-                <nav>
-                    <div class="nav-wrapper">
-                        <div class="col s12">
-                            <a href="#!" class="breadcrumb">2018</a>
-                            <a href="#!" class="breadcrumb">12</a>
-                        </div>
-                    </div>
-                </nav>
-                <ul class="collapsible popout">
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
-                        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
-                        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
-                        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                    </li>
-                </ul>
-            </div>
-            <div class="section" id="2018-11">
-                <nav>
-                    <div class="nav-wrapper">
-                        <div class="col s12">
-                            <a href="#!" class="breadcrumb">2018</a>
-                            <a href="#!" class="breadcrumb">11</a>
-                        </div>
-                    </div>
-                </nav>
-                <ul class="collapsible popout">
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
-                        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
-                        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
-                        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                    </li>
-                </ul>
-            </div>
-            <div class="section" id="2018-10">
-                <nav>
-                    <div class="nav-wrapper">
-                        <div class="col s12">
-                            <a href="#!" class="breadcrumb">2018</a>
-                            <a href="#!" class="breadcrumb">10</a>
-                        </div>
-                    </div>
-                </nav>
-                <ul class="collapsible popout">
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
-                        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
-                        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
-                        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                    </li>
-                </ul>
-            </div>
-            <!--</div>-->
-
-
-        </div>
-        <div class="col hide-on-small-only offset-m6 m3 center-align pinned">
-            <ul class="section table-of-contents">
-                <li><a href="#2018-12"> 2018-12</a></li>
-                <li><a href="#2018-11">2018-11</a></li>
-                <li><a href="#2018-10">2018-10</a></li>
-            </ul>
-        </div>
-    </div>
-</main>
-
-
-<footer class="page-footer teal">
-    <div class="container">
-        <div class="row">
-            <div class="col l6 s12">
-                <h5 class="white-text">Galaxy Bio</h5>
-                <p class="grey-text text-lighten-4">A connected way to explore Galaxy.</p>
-            </div>
-            <div class="col l3 offset-l3 s12">
-                <h5 class="white-text">Settings</h5>
-                <address><strong>Ting</strong><br/> SSDUT of DLUT<br/> Since 2018<br/> <abbr title="Phone">Email:</abbr>
-                    10chongzheng@outlook.com
-                </address>
+        <div class="footer-copyright">
+            <div class="container">
+                Made by <a class="brown-text text-lighten-3" href="http://tingalex.github.io">Chongzheng</a>
             </div>
         </div>
-    </div>
-    <div class="footer-copyright">
-        <div class="container">
-            Made by <a class="brown-text text-lighten-3" href="http://tingalex.github.io">Chongzheng</a>
-        </div>
-    </div>
-</footer>
-
-
+    </footer>
+</div>
 <!--  Scripts-->
 <script src="../materialize/js/materialize.js"></script>
 <script src="../materialize/js/init.js"></script>
